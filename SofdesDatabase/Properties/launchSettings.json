@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SofdesDatabase (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SofdesDatabase (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

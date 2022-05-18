@@ -1,0 +1,72 @@
+﻿<Page
+    x:Class="SofdesDatabase.SignUpPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SofdesDatabase"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ScrollViewer
+        VerticalAlignment="Center"
+        HorizontalAlignment="Stretch">
+        <StackPanel 
+            Orientation="Vertical"
+            Width="256">
+            <TextBlock
+                Text="Sign up"
+                VerticalAlignment="Center"
+                Style="{StaticResource SubtitleTextBlockStyle}"
+                Margin="20,20,20,20"/>
+            <TextBlock
+                Text="Email"
+                Margin="20,20,20,5"/>
+            <TextBox
+                x:Name="emailInput"
+                Margin="20,5,20,10"/>
+            <TextBlock
+                Text="Password"
+                Margin="20,10,20,5"/>
+            <PasswordBox
+                x:Name="passwordInput"
+                Margin="20,5,20,10"/>
+            <TextBlock
+                Text="Name"
+                Margin="20,10,20,5"/>
+            <TextBox
+                x:Name="nameInput"
+                Margin="20,5,20,10"/>
+            <TextBlock
+                Text="Gender"
+                Margin="20,10,20,5"/>
+            <ComboBox
+                x:Name="genderInput"
+                Margin="20,5,20,10"
+                HorizontalAlignment="Stretch">
+                <x:String>Male</x:String>
+                <x:String>Female</x:String>
+                <x:String>Unspecified</x:String>
+            </ComboBox>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button
+                    Grid.Column="0"
+                    Content="Back"
+                    HorizontalAlignment="Stretch"
+                    Margin="20,20,5,20"
+                    Click="Back"/>
+                <Button
+                    Grid.Column="1"
+                    Content="Signup"
+                    HorizontalAlignment="Stretch"
+                    Margin="5,20,20,20"
+                    Style="{StaticResource AccentButtonStyle}"
+                    Click="SignUp"/>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
